@@ -459,17 +459,17 @@ header{
     font-size: 0.9rem;
 }
 
-.footer__container{
+.footer_container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
 }
 
-.footer__container > div h4{
+.footer_container > div h4{
     margin-bottom: 1.2rem;
 }
 
-.footer__1 p{
+.footer_1 p{
     margin: 1rem 0 2rem;
 }
 
@@ -481,18 +481,28 @@ header{
     text-decoration: underline;
 }
 
-.footer__socials{
+.footer_socials{
     display: flex;
     gap: 1rem;
     font-size: 1.2rem;
     margin-top: 2rem;
 }
 
-.footer__copyright{
+.footer_copyright{
     text-align: center;
     margin-top: 4rem;
     padding: 1.2rem 0;
     border-top: 1px solid var(--color-bg2);
+}
+
+@media (max-width: 767px) {
+    
+    .footer_container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
 }
 
 
