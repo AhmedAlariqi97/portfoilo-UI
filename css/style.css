@@ -502,6 +502,9 @@ header{
         flex-direction: column;
         text-align: center;
     }
+    .footer_socials{
+        justify-content: center;
+    }
     
 }
 
