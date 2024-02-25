@@ -197,7 +197,7 @@ header{
 
 .categories{
     background: var(--color-bg1);
-    height: 32rem;
+    height: 36rem;
 }
 
 .categories h1{
@@ -212,6 +212,7 @@ header{
 
 .categories_left{
     margin-right: 4rem;
+    margin-bottom: 2rem;
 }
 
 .categories_left p{
@@ -261,6 +262,40 @@ header{
 
 .category p{
     font-size: 0.85rem;
+}
+
+@media (max-width: 991px) {
+    .categories{
+        background: var(--color-bg1);
+        height: 58rem;
+    }
+    
+    .categories_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .categories_right{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+}
+@media (max-width: 767px) {
+    .categories{
+        background: var(--color-bg1);
+        height: 62rem;
+    }
+}
+@media (max-width: 576px) {
+    .categories{
+        background: var(--color-bg1);
+        height: 105rem;
+    }
+    .categories_right{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.2rem;
+    }
 }
 
 /* ======================== Categories ================================ */
